@@ -1,0 +1,1 @@
+$(".question").click(function(t){$(this).toggleClass("question-active");var e=$(this).find(".question-title p").text(),s=$(this).find(".answer p").text();console.log("question : "+e),console.log("réponse : "+s),$(".faq-answers .question-title p").html(e),$(".faq-answers .answer p").html(s),t.preventDefault()});

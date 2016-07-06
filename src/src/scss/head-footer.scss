@@ -1,0 +1,71 @@
+.uber-header {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: $MainColorUber;
+	height: 200px;
+	align-items: center;
+	justify-content: center;
+
+	h2 {
+		color: #fff;
+		font-family: 'Quicksand';
+		font-weight: bold;
+		font-size: 26px;
+	}
+}
+
+.navigation-footer {
+	display: none;
+}
+
+@media screen and (min-width: 768px){
+	.navigation-footer {
+		display: flex;
+		height: 63px;
+		justify-content: space-around;
+		background: #fff;
+		border-bottom: 1px solid #f3f2f2;
+		
+		ul {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			align-content: center;
+			justify-content: space-around;
+
+			li {
+				text-align: center;
+				margin: 0px 24px;
+
+				a {
+					font-size: 12px;
+					text-transform: uppercase;
+					font-family: 'Quicksand';
+					font-weight: bold;
+					color: #545454;
+					text-decoration: none;
+				}
+
+				&.nav-active {
+					background: $MainColorUber;
+					padding: 9px;
+					border-radius: 6px;
+
+					a {
+						color: #fff;
+					}
+				}
+
+				&:hover {
+					a {
+						padding-bottom: 2px;
+						border-bottom: 3px solid $MainColorUber;
+					}
+					
+				}
+
+			}
+		}
+	}
+}
